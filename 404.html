@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      // GitHub Pages shows this page for any path it has no file for, such as a
+      // refreshed /projectEdit. Send the visitor to the app's home page in the
+      // same folder: /mm-local-editor/ on AMMBER's site, /<repository>/ on a fork.
+      var folder = window.location.pathname.split("/")[1];
+      var home = "/" + (folder ? folder + "/" : "");
+      if (window.location.pathname !== home) window.location.replace(home);
+    </script>
+  </head>
+  <body></body>
+</html>
